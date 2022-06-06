@@ -1,6 +1,7 @@
 version: 2.1
 
 orbs:
+  # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@4.1.0
   aws-s3: circleci/aws-s3@2.0
   eb: circleci/aws-elastic-beanstalk@2.0.1
@@ -13,11 +14,12 @@ jobs:
     working_directory: ~/udagram-frontend
     steps:
       - node/install:
-          node-version: '14.15.1'
+          node-version: "14.15"
       - checkout:
           path: ~/udagram-frontend
       - aws-cli/install
       - aws-cli/setup
+      # Use root level package.json to install dependencies in the frontend app
       - run:
           name: check node version
           command: node --version
@@ -65,4 +67,4 @@ workflows:
   sample:
     jobs:
       - frontend
-      # - backend
+      - backend
