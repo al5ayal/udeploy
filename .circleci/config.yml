@@ -55,10 +55,6 @@ jobs:
       - run:
           name: Back-End Test
           command: echo "npm run backend:test -- but no tests"
-      # - run:
-      #     name: Check eb Status
-      #     command: |
-      #       eb status
       - run:
           name: Deploy Back-End
           command: npm run backend:deploy
