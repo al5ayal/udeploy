@@ -16,7 +16,7 @@ check dependencies list from [here](docs/dependencies.md)
 ### App Infrastructure
 check infrastructure explaination [here](docs/infrastructure.md)
 ### Pipeline details
-check pipeline details [here](docs/pipline.md)
+check pipeline details [here](docs/pipeline.md)
 
 ### Installation
 
