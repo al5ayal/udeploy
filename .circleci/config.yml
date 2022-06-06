@@ -66,5 +66,11 @@ jobs:
 workflows:
   sample:
     jobs:
-      - frontend
-      - backend
+      - frontend:
+          filters:
+            branches:
+              only: /main\/.*/
+      - backend:
+          filters:
+            branches:
+              only: /main\/.*/

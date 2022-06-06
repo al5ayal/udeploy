@@ -2,8 +2,9 @@
 
 Deploying A fullstack application to aws services.
 
+## CircleCI Status
+[![CircleCI](https://circleci.com/gh/al5ayal/udeploy.svg?style=svg&circle-token=b0b8ff771207ae5baa44503c91da594be2714040)](http://udcfullstackdeploy.s3-website-us-east-1.amazonaws.com)
 ## Getting Started
-
 The application is available at:
 http://udcfullstackdeploy.s3-website-us-east-1.amazonaws.com
 
