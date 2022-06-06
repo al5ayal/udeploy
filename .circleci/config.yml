@@ -65,8 +65,8 @@ workflows:
       - frontend:
           filters:
             branches:
-              only: /main\/.*/
+              only: main
       - backend:
           filters:
             branches:
-              only: /main\/.*/
+              only: main
